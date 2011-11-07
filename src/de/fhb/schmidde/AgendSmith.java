@@ -12,7 +12,7 @@ public final class AgendSmith {
 	
     public static void main(String[] args) {
         
-    	int mode = 8;
+    	int mode = 9;
     	long id = 0L;
 In in = new In();
     
