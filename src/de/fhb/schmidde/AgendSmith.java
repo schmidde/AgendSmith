@@ -71,16 +71,19 @@ In in = new In();
                     System.out.println("From: @" + message.getSenderScreenName() + " id:" + message.getId() + " - "
                             + message.getText());
                     uid = message.getSenderId();
-                    if(message.getText().equals(answer)){}
-                    else hasAnswered = true;
+                    if(message.getText().equals(answer)){
+                    	hasAnswered = true;
+                    }
+                    
                 }
                 paging.setPage(paging.getPage() + 1);
             } while (messages.size() > 0 && paging.getPage() < 10);
-            if(hasAnswered){System.out.println("bereits geantortet");}
+            if(hasAnswered){System.out.println("bereits geantwortet");}
             else{
-            	//DirectMessage message = twitter.sendDirectMessage(uid, answer);
+            	System.out.println("noch nicht geantwortet");
+            	DirectMessage message = twitter.sendDirectMessage(uid, answer);
+            	System.out.println("Message sent to UserId: " + uid);
             }
-            System.out.println("Message sent to UserId: " + uid);
             System.out.println("done.");
         } catch (TwitterException te) {
             te.printStackTrace();
