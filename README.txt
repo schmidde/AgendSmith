@@ -1,3 +1,5 @@
+@author Dennis Schmidt
+
 AgendSmith
 
 AgendSmith.jar wird über die Kommandozeile aufgerufen.
