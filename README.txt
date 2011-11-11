@@ -1,4 +1,6 @@
-AgendSmith
+﻿@author Dennis Schmidt
+
+AgendSmith for Twitter
 
 AgendSmith.jar wird über die Kommandozeile aufgerufen.
 Dazu ins Verzeichnis mit der .jar-Datei wechseln und 
